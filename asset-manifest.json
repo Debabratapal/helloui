@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/helloui/static/css/main.db3c4536.chunk.css",
-    "main.js": "/helloui/static/js/main.93b8a8af.chunk.js",
-    "main.js.map": "/helloui/static/js/main.93b8a8af.chunk.js.map",
+    "main.css": "/helloui/static/css/main.bd7aca66.chunk.css",
+    "main.js": "/helloui/static/js/main.efd43312.chunk.js",
+    "main.js.map": "/helloui/static/js/main.efd43312.chunk.js.map",
     "runtime-main.js": "/helloui/static/js/runtime-main.cc2bffa8.js",
     "runtime-main.js.map": "/helloui/static/js/runtime-main.cc2bffa8.js.map",
-    "static/js/2.f5718bce.chunk.js": "/helloui/static/js/2.f5718bce.chunk.js",
-    "static/js/2.f5718bce.chunk.js.map": "/helloui/static/js/2.f5718bce.chunk.js.map",
+    "static/js/2.efedc233.chunk.js": "/helloui/static/js/2.efedc233.chunk.js",
+    "static/js/2.efedc233.chunk.js.map": "/helloui/static/js/2.efedc233.chunk.js.map",
     "index.html": "/helloui/index.html",
-    "precache-manifest.04bc5b316b4ee2dcb9d2f1b42a78736e.js": "/helloui/precache-manifest.04bc5b316b4ee2dcb9d2f1b42a78736e.js",
+    "precache-manifest.1d08ec86bb548c2d6b5ab9a6388fcfa9.js": "/helloui/precache-manifest.1d08ec86bb548c2d6b5ab9a6388fcfa9.js",
     "service-worker.js": "/helloui/service-worker.js",
-    "static/css/main.db3c4536.chunk.css.map": "/helloui/static/css/main.db3c4536.chunk.css.map",
+    "static/css/main.bd7aca66.chunk.css.map": "/helloui/static/css/main.bd7aca66.chunk.css.map",
     "static/media/1.svg": "/helloui/static/media/1.fa70efe5.svg",
     "static/media/10.svg": "/helloui/static/media/10.18a63a2d.svg",
     "static/media/2.svg": "/helloui/static/media/2.90a67cfa.svg",
@@ -20,12 +20,13 @@
     "static/media/6.svg": "/helloui/static/media/6.b2838127.svg",
     "static/media/7.svg": "/helloui/static/media/7.29d5e236.svg",
     "static/media/8.svg": "/helloui/static/media/8.797c8b64.svg",
-    "static/media/9.svg": "/helloui/static/media/9.fb65a652.svg"
+    "static/media/9.svg": "/helloui/static/media/9.fb65a652.svg",
+    "static/media/menu.svg": "/helloui/static/media/menu.eefe9e49.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc2bffa8.js",
-    "static/js/2.f5718bce.chunk.js",
-    "static/css/main.db3c4536.chunk.css",
-    "static/js/main.93b8a8af.chunk.js"
+    "static/js/2.efedc233.chunk.js",
+    "static/css/main.bd7aca66.chunk.css",
+    "static/js/main.efd43312.chunk.js"
   ]
 }

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad6ae30d0fc3c79dfa8296f0c2c2e56d",
+    "revision": "beb632f12ee1e194fe6a8d148195c257",
     "url": "/helloui/index.html"
   },
   {
-    "revision": "4c2052f2ee9970f3a251",
-    "url": "/helloui/static/css/main.db3c4536.chunk.css"
+    "revision": "7e8bd091ec71c38df7fe",
+    "url": "/helloui/static/css/main.bd7aca66.chunk.css"
   },
   {
-    "revision": "97ab2796eda88a61abc5",
-    "url": "/helloui/static/js/2.f5718bce.chunk.js"
+    "revision": "57b7a498fa2c6148ef0d",
+    "url": "/helloui/static/js/2.efedc233.chunk.js"
   },
   {
-    "revision": "4c2052f2ee9970f3a251",
-    "url": "/helloui/static/js/main.93b8a8af.chunk.js"
+    "revision": "7e8bd091ec71c38df7fe",
+    "url": "/helloui/static/js/main.efd43312.chunk.js"
   },
   {
     "revision": "e1e1b0d3c9b610342166",
@@ -58,5 +58,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fb65a652368e3eed015510b048e80b6c",
     "url": "/helloui/static/media/9.fb65a652.svg"
+  },
+  {
+    "revision": "eefe9e4954c1667853cc8e787cef8f3e",
+    "url": "/helloui/static/media/menu.eefe9e49.svg"
   }
 ]);
