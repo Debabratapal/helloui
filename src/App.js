@@ -5,13 +5,20 @@ import SidebarComponent from './Sidebar.jsx';
 import TestDashboard from './Dashborad.jsx';
 
 class TestComponent extends React.Component {
+  state = {
+    open: true,
+  }
+
+  openBar = () => {
+    this.setState({open: !this.state.open});
+  }
 
   render() {
     return (
       <div className="testing-ui">
-        <NavComponent />
+        <NavComponent openBar={this.openBar}/>
         <div style={{display:'flex'}}>
-        <SidebarComponent />
+        <SidebarComponent open={this.state.open}/>
         <TestDashboard />
         </div>
       </div>

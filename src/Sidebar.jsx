@@ -32,9 +32,11 @@ let item = [
 
 class SidebarComponent extends React.Component {
   render() {
+   
+    let width = window.innerWidth;
     return (
       
-      <div className='sidebar-ui'>
+      <div className='sidebar-ui' style={{display: this.props.open ? 'block': width>999 ? 'block':'none'}}>
         {item.map((el,i) => (
           <div key={i} className="ui-items">
             <div className="title">{el.title}</div>

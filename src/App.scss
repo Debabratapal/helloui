@@ -4,68 +4,187 @@
   color: #333;
   font-weight: 100;
 
+  .timetable {
+    display: none;
+    width: 100%;
+    border: 1px solid #f8f8f8;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 6px #ccc;
+    .fst-part {
+      display: flex;
+      font-size: 12px;
+      justify-content: space-between;
+      .spa {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .spc {
+        margin-left: 5px;
+      }
+      .spb {
+        display: flex;
+        color: #868686;
+      }
+    }
+    .scn-part {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px 0;
+      .spa {
+        font-size: 35px;
+      }
+      .spb {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 475px) {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 475px) {
+    .timetable {
+      display: block;
+    }
+  }
+  .down-ui {
+    width:45%;
+    border: 1px solid #f8f8f8;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 6px #ccc;
+    display: flex;
+    .fst-part {
+      .spa {
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .spb {
+        font-size: 13px;
+      }
+      .spc {
+        font-size: 45px;
+      }
+      .spd {
+        font-size: 11px;
+        color: #868686;
+      }
+      .spf {
+        margin-top: 1rem;
+      }    
+    }
+    .scn-part {
+      width: 100%;
+      table {
+        width: 100%;
+        th {
+          font-weight: normal;
+          margin: 0px 30px;
+          background: #f8f8f8;
+          border-radius: 20px;
+          font-size: 11px;
+        }
+      }
+    }
+    @media (max-width: 475px) {
+      display: none;
+    }
+  }
+
   .dashboard-ui {
     width: 82%;
     margin-top: 18px;
     .ui-dash-bar {
       display: flex;
-      padding: 0px 20px;
+      padding: 0 20px;
       .ui-items2 {
         box-shadow: 1px 0px 6px #ccc;
         padding: 13px;
         display: flex;
         justify-content: space-between;
-        flex-basis: 28%;
-        text-align: center;
+        flex-basis: 40%;
         margin-right: 20px;
         .fst-part {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
+          align-items: flex-start;
         }
         .snd-part {
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          flex-direction: column;
+        }
+        .middle {
+          height: 95%;
+          width: 1px;
+          background-color: #ccd;
         }
         .spa {
           color: #868686;
-          font-size: 27px;
+          font-size: 32px;
+          
         }
         .spb {
           color: #868686;
-          font-size: 9px;
+          font-size: 11px;
+          margin-top: 5px;
         }
         .spc {
-          font-size: 11px;
+          font-size: 14px;
+          font-weight: 400;
         }
         .spe {
-          font-size: 35px;
-          color: #868686
+          font-size: 36px;
+          color: #868686;
+          margin-bottom: 8px;
         }
         .spf {
-          font-size: 13px;
+          font-size: 14px;
+          font-weight: 400;
         }
       }
       .ui-items {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         box-shadow: 2px 0px 6px #ccc;
         border-radius: 8px;
         margin-right: 20px;
         padding: 20px;
+        position: relative;
+        transition: 0.3s;
         .spa {
           font-size: 45px;
           font-weight: 100;
          
         }
+        .spimg {
+          width:33px;
+          position: absolute;
+          right: 10%;
+          top: 18%;
+          @media (max-width: 475px) {
+            display: none;
+          }
+        }
+        .down {
+          position: absolute;
+          bottom: 8%;
+          width: 73%;
+        }
         .spb {
-          color: #868686;
+          color: #ccd;
           font-size: 15px
         }
         .spc {
-          margin-top: 4rem;
+          
           font-size: 11px;
           text-transform: uppercase;
         }
@@ -78,16 +197,19 @@
           .spe {
             height: 100%;
             border-radius: 20px;
-
+            background: green;
           }
         }
         &:hover {
           color: #fff;
-          background: rgb(144, 144, 212);
+          background: #9090d4;
           .spe {
             background: #fff;
           }
         }
+      }
+      @media (max-width: 475px) {
+        padding: 0;
       }
     }
   }
@@ -95,10 +217,11 @@
   
   .sidebar-ui {
     text-transform: uppercase;
-    width: 18%;
+    width: 20%;
     height: 84vh;
     box-shadow: 2px 0px 6px #ccc;
     margin-top: 20px;
+    
     .title {
       font-size: 10px;
       color: #868686;
@@ -116,26 +239,38 @@
         background: #dadaff;
       }
     }
+    @media (max-width: 475px) {
+      display: none;
+      width: 55%;
+    }
   }
 
   .navbar-ui {
     display: flex;
     align-items: center;
     box-shadow: 2px 3px 6px #ccc;
-   
+    .menu {
+      display: none;
+      margin-left: 20px;
+    }
+    
     .dash {
       flex-basis: 18%;
       text-align: center;
       text-transform: uppercase;
       padding: 20px 0;
       width: 100%;
+      transition: 0.3s;
       &:hover {
+
         background: #dadaff
       }
       @media(max-width: 475px) {
         width: 100%;
+        margin-left: 30px;
       }
     }
+
     .ui-items {
       display: flex;
       flex-basis: 60%;
@@ -143,6 +278,7 @@
         flex-basis: 20%;
         padding: 20px 0;
         text-align: center;
+        transition: 0.3s;
         div {
           text-transform: uppercase;
           line-height: 0.9
@@ -151,6 +287,7 @@
           font-size: 12px;
         }
         &:hover {
+        
           color: white;
           background: rgb(144, 144, 212)
           
@@ -158,6 +295,12 @@
       }
       @media(max-width: 475px) {
         display: none;
+
+      }
+    }
+    @media(max-width: 475px) {
+      .menu {
+        display: block;
       }
     }
   }
